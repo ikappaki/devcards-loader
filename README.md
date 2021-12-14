@@ -7,12 +7,12 @@ dependencies.
 
 ## Usage with shadow-cljs
 
-Reference the latest GitHub commit SHA of this library in your
-`deps.edn` file:
+Add `devcards-loader` in your `:deps` `deps.edn` file:
 
 ```clojure
 {:deps {ikappaki/devcards-loader {:git/url "https://github.com/ikappaki/devcards-loader"
-                                  :git/sha "..."}
+                                  :git/tag "v0.1.0"
+                                  :git/sha "b6a4abda4994838ae3e4d556465e3445ec89e95b"}
         ;; ...
         }
  ;; ...
