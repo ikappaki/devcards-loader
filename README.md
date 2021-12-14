@@ -5,6 +5,19 @@ A tiny library hack to load
 `marked` and `highlight.js` npm packages required as external
 dependencies.
 
+## Rationale
+
+[bhauman/devcards](https://github.com/bhauman/devcards) cannot be
+loaded directly as a library into a cljs project (see
+https://github.com/bhauman/devcards/issues/168) due to internal npm
+package naming conventions introduced earlier in its development,
+before npm package integration with `shadow-cljs` and `ClojureScript`
+were the norm.
+
+This library creates a tiny layer in front of `devcards` so that it
+can be loaded in a cljs project as usual, provided that its two
+required dependencies were made available via npm.
+
 ## Usage with shadow-cljs
 
 Add `devcards-loader` in your `:deps` `deps.edn` file:
