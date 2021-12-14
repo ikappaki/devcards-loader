@@ -1,0 +1,4 @@
+{:paths ["src" "test"]
+ :deps {ikappaki/devcards-loader {:local/root ".."}
+        reagent/reagent          {:mvn/version "1.1.0"}
+        thheller/shadow-cljs     {:mvn/version "2.16.8"}}}

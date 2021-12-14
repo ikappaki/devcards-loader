@@ -1,0 +1,14 @@
+{:deps true
+
+ :builds
+ {:devcards
+  {:target           :browser-test
+   :ns-regexp        "-cards$"      ;; load all files ending in "-cards$".
+   :test-dir         "out/devcards"
+   :runner-ns        devcards-toc   ;; call devcards-toc/init.
+   :compiler-options {:devcards           true
+                      :output-feature-set :es8
+                      }
+   :devtools
+   {:http-port 3000
+    :http-root "out/devcards"}}}}

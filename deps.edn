@@ -1,0 +1,2 @@
+{:paths ["src"]
+ :deps {devcards/devcards {:mvn/version "0.2.7"}}}
